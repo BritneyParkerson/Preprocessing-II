@@ -1,13 +1,17 @@
 .home {
-
+  header{
+    border-top: 2px dashed silver;
+    border-bottom: 2px dashed silver;
+  }
+  header h2{
+    margin-top: 20px;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -58,4 +62,123 @@
       margin-bottom: 30px;
     }
   }
-}// home
+
+  @media @mobile {
+     .top-nav{
+      display: inline-block;
+      margin: auto 27% 20px;
+    }
+
+    .top-nav h1{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .top-nav a{
+     font-size: 8px;
+     margin: 2px 7px;
+     padding: 2px;
+    }
+
+
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 45%;
+      margin: 0 auto 20px;
+    }
+
+    
+    .content-destination, .text-content {
+     width: 45%;
+    }
+
+    .content-section{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      
+  }
+  .content-section h2{
+    margin-top: 10px;
+  }
+  
+  .inverse-content{
+    flex-direction: column-reverse;
+  }
+
+  .content-pick{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+   
+  }
+
+  @media @tablet {
+    body{
+      background: wheat;
+    }
+    .top-nav{
+      display: inline-block;
+      margin: auto 27% 20px;
+    }
+
+    .top-nav h1{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .top-nav a{
+     font-size: 10px;
+     margin: 5px 10px;
+     padding: 5px;
+    }
+
+
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 45%;
+      margin: 0 auto 20px;
+    }
+
+    
+    .content-destination, .text-content {
+     width: 45%;
+    }
+
+    .content-section{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      
+  }
+  .content-section h2{
+    margin-top: 10px;
+  }
+  
+  .inverse-content{
+    flex-direction: column-reverse;
+  }
+
+  .content-pick{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media @desktop {
+  body{
+  background: tan;
+}   
+
+}
+  
+
+// home
