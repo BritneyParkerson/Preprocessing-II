@@ -1,3 +1,15 @@
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #17A2B8;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #117a8b;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,10 +185,13 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
+.top-nav h1 {
+  margin: auto auto auto -5px;
+}
 .top-nav a {
   border: 5px outset BurlyWood;
   background: linear-gradient(50deg, Cornsilk, BurlyWood, Cornsilk);
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px 20px;
   padding: 7px;
   border-radius: 15px;
@@ -197,6 +212,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed silver;
+}
+.home header h2 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -243,4 +265,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (min-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
